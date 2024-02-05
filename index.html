@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" href="imgs/daily-quotes-icon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <!-- -=GSAP=- -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <title>DailyQuotes</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="nav">
+      <a class="nav-brand" href="#" title="DailyQuotes">DailyQuotes</a>
+      <div class="i-bars">
+        <i class="fa-solid fa-bars hamburger"></i>
+      </div>
+      <div class="i-x">
+        <i class="fa-solid fa-x hamburger"></i>
+      </div>
+      <ul class="nav-ul-container">
+        <a href="#" class="hamb-logo">DailyQuotes</a>
+        <li><a href="#hero-section">Home</a></li>
+        <li><a href="#famous-section">Famous Quotes</a></li>
+        <li>
+          <a href="#"
+            >Categories<i class="fa-solid fa-chevron-down dropdown"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION  -->
+    <section class="hero-section" id="hero-section">
+      <div class="hero-text-con">
+        <h1>Today's Quote</h1>
+        <p>
+          Two things are infinite: the universe and human stupidity; and I'm not
+          sure about the universe.
+        </p>
+      </div>
+    </section>
+
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- TIMER SECTION -->
+      <section class="timer-section">
+        <div>
+          <div>
+            <h1>Time till the next <br />daily quote!</h1>
+            <i
+              class="fa-regular fa-clock fa-spin-pulse"
+              style="font-size: 1.5rem"
+            ></i>
+            <div id="timer" class="timer"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAMOUS QUOTES SECTION -->
+      <section class="famous-section" id="famous-section">
+        <h1>Famous People Quotes</h1>
+        <div>
+          <img
+            src="people-quotes/elon musk.png"
+            loading="lazy"
+            title="Elon Musk"
+            class="famous-people"
+          />
+          <img
+            src="people-quotes/abraham lincoln.png"
+            loading="lazy"
+            title="Abraham Lincoln"
+            class="famous-people"
+          />
+          <img
+            src="people-quotes/einstein.png"
+            loading="lazy"
+            title="Albert Einstein"
+            class="famous-people"
+          />
+          <img
+            src="people-quotes/john lennon.png"
+            loading="lazy"
+            title="John Lennon"
+            class="famous-people"
+          />
+          <img
+            src="people-quotes/steve jobs.png"
+            loading="lazy"
+            title="Steve Jobs"
+            class="famous-people"
+          />
+          <img
+            src="people-quotes/martin luther king.png"
+            loading="lazy"
+            title="Martin Luther King Jr."
+            class="famous-people"
+          />
+          <img
+            src="people-quotes/nelson.png"
+            loading="lazy"
+            title="Nelson Mandela"
+            class="famous-people"
+          />
+          <img
+            src="people-quotes/thomas edison.png"
+            loading="lazy"
+            title="Thomas Edison"
+            class="famous-people"
+          />
+          <img
+            src="people-quotes/tony robbins.png"
+            loading="lazy"
+            title="Tony Robbins"
+            class="famous-people"
+          />
+          <img
+            src="people-quotes/walt disney.png"
+            loading="lazy"
+            title="Walt Disney"
+            class="famous-people"
+          />
+        </div>
+      </section>
+      <!-- MODAL -->
+      <dialog id="modal" class="modal">
+        <i class="fa-solid fa-x"></i>
+        <h1></h1>
+        <p></p>
+      </dialog>
+    </main>
+
+    <!-- LOADER -->
+    <div class="loading-container">
+      <div class="cube-loader">
+        <div class="cube-top"></div>
+        <div class="cube-wrapper">
+          <span style="--i: 0" class="cube-span"></span>
+          <span style="--i: 1" class="cube-span"></span>
+          <span style="--i: 2" class="cube-span"></span>
+          <span style="--i: 3" class="cube-span"></span>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="foooter-con">&copy; 2023 DailyQuotes.</div>
+      <a href="#hero-section" class="back-to-top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+      </a>
+    </footer>
+  </body>
+</html>
